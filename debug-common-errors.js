@@ -28,7 +28,8 @@ Think about which debugging methods you found most useful and how you might appl
 
 //Correct code
 console.log("Welcome to the bootcamp");
-/*Syntax error : by reading the error message it is clear that,
+/*
+ Syntax error : by reading the error message it is clear that,
  it is missing closing quotation marks and parantheses and semicolon.
 */
 
@@ -73,15 +74,15 @@ function isPrime(num) {
   if (num < 2) return false;
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
-      return false;  // Supposed to indicate num is NOT prime
-      //If the reminder after division with 2 is 0 it indicates the given number is prime 
-      //so it should return true but not false
+      return false;  
+      //If the reminder after division with 2 is 0 it indicates the given number is not prime 
+      //so it should return false but not true
 
     }
   }
-  return true; // Supposed to indicate num IS prime
+  return true; // indicates the number is prime
 
 }
-console.log(isPrime(7)); // Expected true but gets false
+console.log(isPrime(7)); // return true as 7 is a prime number
 console.log(isPrime(11));// return true as 11 is a prime number
 console.log(isPrime(4)); // returns false
