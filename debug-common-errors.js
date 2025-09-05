@@ -75,7 +75,7 @@ function isPrime(num) {
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
       return false;  
-      //If the reminder after division with 2 is 0 it indicates the given number is not prime 
+      //if the division in any iteration results as 0 then the  given number is not prime 
       //so it should return false but not true
 
     }
